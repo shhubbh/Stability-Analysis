@@ -1,0 +1,28 @@
+# Seismic Flow 
+
+1) Setup Environment: Install OpenSeesPy and necessary libraries.
+	- look for prebuilt docker containers to save time here
+
+2) Prepare Mesh: Convert VTK mesh to OpenSeesPy format.
+	- find tools/libraries to perform this conversion
+	- see if possible to generate the mesh directly in this format
+
+3) Define Model: Create nodes, elements, and materials in OpenSeesPy.
+	- Figure out how to extract nodes, elements & assign material properties.
+
+4) Apply Conditions: Set boundary conditions and seismic loads.
+	- Set boundary conditions to simulate constraints at the base of the pit or along certain walls.
+	- Apply seismic loads using ground motion records, or create synthetic records.
+	- Make sure to list all loads so that we dont miss any and type of load 
+
+5) Analysis Setup: Define analysis type and parameters.
+	- type of analysis, static or dynamic. For seismic it is usually dynamic
+
+6) Run Analysis: Execute the seismic analysis.
+	-fragility curve, FoS applicable?
+	
+7) Post-Process: Visualize results for interpretation.
+	- extraction & visualisation of the results using plotting libraries
+
+
+
